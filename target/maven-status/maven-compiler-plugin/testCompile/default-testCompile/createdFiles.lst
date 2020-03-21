@@ -1,0 +1,16 @@
+org/nkalugin/kafka/consumer/SeekRequestTest.class
+org/nkalugin/kafka/consumer/SeekRequestTest$ProblemVoidVoidAsyncLogProcessor.class
+org/nkalugin/kafka/consumer/async/OffsetControllerTest.class
+org/nkalugin/kafka/consumer/KafkaConsumerBuilderTest$VoidVoidSyncBatchLogProcessor.class
+org/nkalugin/kafka/consumer/SkipOffsetTest$VoidVoidSyncLogProcessor.class
+org/nkalugin/kafka/consumer/SkipOffsetTest.class
+org/nkalugin/kafka/consumer/SeekRequestTest$1.class
+org/nkalugin/kafka/consumer/KafkaConsumerBuilderTest$VoidVoidSyncLogProcessor.class
+org/nkalugin/kafka/consumer/SeekRequestTest$VoidVoidSyncLogProcessor.class
+org/nkalugin/kafka/consumer/KafkaConsumerBuilderTest.class
+org/nkalugin/kafka/consumer/SkipOffsetTest$VoidVoidAsyncLogProcessor.class
+org/nkalugin/kafka/consumer/KafkaConsumerBuilderTest$1.class
+org/nkalugin/kafka/consumer/InMemoryKafka.class
+org/nkalugin/kafka/consumer/SkipOffsetTest$1.class
+org/nkalugin/kafka/consumer/TestClientFactory.class
+org/nkalugin/kafka/consumer/KafkaConsumerBuilderTest$VoidVoidAsyncLogProcessor.class
