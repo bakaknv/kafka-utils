@@ -1,6 +1,0 @@
-/home/nkalugin/kafka-utils/src/test/java/org/nkalugin/kafka/consumer/TestClientFactory.java
-/home/nkalugin/kafka-utils/src/test/java/org/nkalugin/kafka/consumer/InMemoryKafka.java
-/home/nkalugin/kafka-utils/src/test/java/org/nkalugin/kafka/consumer/KafkaConsumerBuilderTest.java
-/home/nkalugin/kafka-utils/src/test/java/org/nkalugin/kafka/consumer/SkipOffsetTest.java
-/home/nkalugin/kafka-utils/src/test/java/org/nkalugin/kafka/consumer/async/OffsetControllerTest.java
-/home/nkalugin/kafka-utils/src/test/java/org/nkalugin/kafka/consumer/SeekRequestTest.java
