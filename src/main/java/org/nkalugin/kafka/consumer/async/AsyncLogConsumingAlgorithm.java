@@ -101,11 +101,4 @@ public class AsyncLogConsumingAlgorithm<K, V> implements LogConsumingAlgorithm<K
     {
         offsetController.clear();
     }
-
-
-    @Override
-    public void resetAllData(Consumer<K, V> consumer)
-    {
-        offsetController.clear();
-    }
 }

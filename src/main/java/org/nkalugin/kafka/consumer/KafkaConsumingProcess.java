@@ -70,8 +70,6 @@ public class KafkaConsumingProcess<K, V>
 
     private volatile long lastSuccessfulExecutionTimestamp;
 
-    private volatile boolean needResetAllData = false;
-
     private volatile SeekRequest seekRequest = null;
 
     private final Set<TopicPartitionOffset> offsetsToSkip = ConcurrentHashMap.newKeySet();
@@ -104,7 +102,6 @@ public class KafkaConsumingProcess<K, V>
             }
 
             processFirstIteration();
-            processResetAllData();
             processInitialization();
             processRetryIfNeed();
             processSeekRequest();
@@ -157,17 +154,6 @@ public class KafkaConsumingProcess<K, V>
             seekRequest.process(consumer, consumerInfo);
             rawLogProcessor.clearInternalStateOnSeekRequest(seekRequest);
             seekRequest = null;
-        }
-    }
-
-
-    private void processResetAllData()
-    {
-        if (needResetAllData)
-        {
-            logger.warn("Resetting all data for consumer {}", consumerInfo.getClientName());
-            rawLogProcessor.resetAllData(consumer);
-            needResetAllData = false;
         }
     }
 
@@ -297,12 +283,6 @@ public class KafkaConsumingProcess<K, V>
             return System.currentTimeMillis();
         }
         return lastSuccessfulExecutionTimestamp;
-    }
-
-
-    public void resetAllData()
-    {
-        this.needResetAllData = true;
     }
 
 

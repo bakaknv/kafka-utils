@@ -10,7 +10,7 @@ import org.apache.kafka.clients.consumer.Consumer;
  * @author nkalugin on 16.11.18.
  */
 public interface RawLogProcessor<K, V> extends ConsumerInfoProvider<K, V>, CustomRetry<K, V>,
-        CustomInitialization<K, V>, ResetAllData<K, V>
+        CustomInitialization<K, V>
 {
     /**
      * Обработка лога в самом общем виде, имеется доступ к consumer-у, можно творить что угодно.

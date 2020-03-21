@@ -75,11 +75,4 @@ public class SyncLogConsumingAlgorithm<K, V> implements LogConsumingAlgorithm<K,
     {
         // nop
     }
-
-
-    @Override
-    public void resetAllData(Consumer<K, V> consumer)
-    {
-        // nop
-    }
 }

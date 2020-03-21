@@ -9,7 +9,7 @@ import org.apache.kafka.clients.consumer.Consumer;
 /**
  * @author nkalugin on 30.11.18.
  */
-public interface LogConsumingAlgorithm<K, V> extends ResetAllData<K, V>
+public interface LogConsumingAlgorithm<K, V>
 {
     ConsumerInfoProvider<K, V> getConsumerInfoProvider();
 

@@ -89,17 +89,4 @@ public class StatefulLogProcessorContainer<K, V> implements RawLogProcessor<K, V
     {
         // nop, т.к. stateful retry
     }
-
-
-    @Override
-    public void resetAllData(Consumer<K, V> consumer)
-    {
-        if (logConsumingAlgorithm.getConsumerInfoProvider() instanceof ResetAllData)
-        {
-            logConsumingAlgorithm.resetAllData(consumer);
-            // noinspection unchecked
-            ((ResetAllData) logConsumingAlgorithm.getConsumerInfoProvider()).resetAllData(consumer);
-            fetchResult = null;
-        }
-    }
 }
